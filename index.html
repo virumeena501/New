@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikrant Boss Community</title>
+
+<!-- 🔥 Meta Pixel (All-in-One) -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){
+n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+// 👉 Apna Pixel ID yaha daalo
+fbq('init', '123456789012345'); 
+
+// Page load tracking
+fbq('track', 'PageView');
+
+// 🔥 Button click tracking function (same code me)
+function trackJoin() {
+  fbq('track', 'Lead', {
+    content_name: "Telegram Join",
+    value: 1,
+    currency: "USD"
+  });
+}
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Pixel -->
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+p {
+  color: #ccc;
+}
+
+.box {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  margin: 25px auto;
+  border-radius: 10px;
+  max-width: 350px;
+}
+
+ul {
+  text-align: left;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 25px;
+  background: #00ffcc;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* hover effect */
+.btn:hover {
+  background: #00ccaa;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>India’s Fast Growing Game Analysis Community 🚀</h1>
+
+<p>Join our private community where we share daily game insights and strategies for learning purpose.</p>
+
+<div class="box">
+<ul>
+<li>✔ Daily Game Analysis</li>
+<li>✔ Strategy Based Insights</li>
+<li>✔ Beginner Friendly</li>
+<li>✔ Active Community Support</li>
+</ul>
+</div>
+
+<!-- 🔥 Button with tracking -->
+<a href="https://t.me/+wB6supy8QHIwODM1"
+   class="btn"
+   onclick="trackJoin()">
+   Join Private Community
+</a>
+
+<p style="margin-top:15px;">⚠ Limited Access – Only for serious users</p>
+
+<p style="font-size:12px; color:#888; margin-top:25px;">
+This platform is only for educational purposes. We do not promote gambling or guarantee earnings.
+</p>
+
+</div>
+
+</body>
+</html>
