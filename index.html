@@ -3,48 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vikrant Boss Community</title>
+<title>Join Telegram</title>
 
-<!-- 🔥 Meta Pixel (All-in-One) -->
+<!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){
-n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];
-t=b.createElement(e);t.async=!0;
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=true;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-// 👉 Apna Pixel ID yaha daalo
-fbq('init', '1098599856001701'); 
-
-// Page load tracking
+// 👉 APNI PIXEL ID YAHAN DALO
+fbq('init', '1028559136224244');
 fbq('track', 'PageView');
-
-// 🔥 Button click tracking function (same code me)
-function trackJoin() {
-  fbq('track', 'Lead', {
-    content_name: "Telegram Join",
-    value: 1,
-    currency: "USD"
-  });
-}
 </script>
 
+<!-- Backup Tracking -->
 <noscript>
 <img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"/>
 </noscript>
-<!-- End Pixel -->
 
 <style>
 body {
   margin: 0;
   font-family: Arial;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: radial-gradient(circle at top, #0a1f2c, #020d14);
   color: white;
   text-align: center;
 }
@@ -53,40 +40,49 @@ body {
   padding: 40px 20px;
 }
 
+.card {
+  max-width: 400px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 30px rgba(0,255,200,0.2);
+}
+
+.live {
+  color: #00ffcc;
+  font-size: 14px;
+}
+
 h1 {
-  font-size: 26px;
+  margin: 10px 0;
 }
 
 p {
-  color: #ccc;
-}
-
-.box {
-  background: rgba(255,255,255,0.1);
-  padding: 20px;
-  margin: 25px auto;
-  border-radius: 10px;
-  max-width: 350px;
-}
-
-ul {
-  text-align: left;
+  color: #aaa;
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 15px 25px;
-  background: #00ffcc;
-  color: black;
+  display: block;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 30px;
   font-weight: bold;
-  border-radius: 8px;
   text-decoration: none;
+  color: black;
+  background: linear-gradient(90deg,#00ffcc,#ffcc00);
 }
 
-/* hover effect */
-.btn:hover {
-  background: #00ccaa;
+.features {
+  margin-top: 25px;
+  color: #ccc;
+}
+
+.footer {
+  margin-top: 25px;
+  color: #888;
+  font-size: 12px;
 }
 </style>
 
@@ -96,34 +92,37 @@ ul {
 
 <div class="container">
 
-<h1>India’s Fast Growing Learning Community🚀</h1>
+<div class="card">
+  <div class="live">● LIVE</div>
 
-<p>Join our private community where members discuss general trends, ideas, and learning resources.</p>
+  <h1>JOIN TELEGRAM</h1>
+  <p>Get instant updates & daily signals</p>
 
-<div class="box">
-<ul>
-<li>✔ Community discussions</li>
-<li>✔ Beginner friendly environment </li>
-<li>✔ Community-based learning</li>
-<li>✔ Educational content only</li>
-<li>✔ Active Community Support</li>
-</ul>
+  <!-- ✅ BEST TRACKING BUTTON -->
+  <a href="#" class="btn" onclick="trackAndRedirect()">
+     🚀 JOIN TELEGRAM
+  </a>
+
+  <div class="features">
+    ⚡ Study Updates <br>
+    🔒 Trusted Channel <br>
+    👥 1000+ Members
+  </div>
+
+  <div class="footer">Powered by Vk Pages</div>
 </div>
 
-<!-- 🔥 Button with tracking -->
-<a href="https://t.me/+wB6supy8QHIwODM1"
-   class="btn"
-   onclick="trackJoin()">
-   Join Private Community
-</a>
-
-<p style="margin-top:15px;">Explore Community</p>
-
-<p style="font-size:12px; color:#888; margin-top:25px;">
-This platform is only for educational purposes. We do not promote gambling or guarantee earnings.
-</p>
-
 </div>
+
+<script>
+function trackAndRedirect(){
+  fbq('track','Lead');
+
+  setTimeout(function(){
+    window.location.href = "https://t.me/+l-2bXY4f8spiNDdl";
+  }, 500); // delay for perfect tracking
+}
+</script>
 
 </body>
 </html>
